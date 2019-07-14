@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <title>Teste com a biblioteca Tangle</title>
+
+        <!-- Template Distill -->
+        <script src="https://distill.pub/template.v1.js"></script>
+
+        <!-- Tangle -->
+        <script type="text/javascript" src="../Tangle/Tangle.js"></script>
+
+        <!-- TangleKit (optional) -->
+        <link rel="stylesheet" href="../Tangle/TangleKit/TangleKit.css" type="text/css">
+        <script type="text/javascript" src="../Tangle/TangleKit/mootools.js"></script>
+        <script type="text/javascript" src="../Tangle/TangleKit/sprintf.js"></script>
+        <script type="text/javascript" src="../Tangle/TangleKit/BVTouchable.js"></script>
+        <script type="text/javascript" src="../Tangle/TangleKit/TangleKit.js"></script>
+
+        <script type="text/javascript">
+
+            function tangleTeste(){
+
+                var rootElement = document.getElementById("calcularCelular");
+                var model = {
+                    initialize: function() {
+                        this.precoUnidade = 1500;
+                        this.quantidadeCelulares = 2;
+                    },
+                    update: function () {
+                        this.valorFinal = this.precoUnidade * this.quantidadeCelulares;
+                    }
+                }
+                var tangle = new Tangle(rootElement, model);
+            }
+
+            function tangleTeste2(){
+
+                var rootElement = document.getElementById("aloca");
+                var model = {
+                    initialize: function() {
+                        this.precoUnidade = 30000;
+                        this.quantidadeCelulares = 2;
+                    },
+                    update: function () {
+                        this.valorFinal = this.precoUnidade * this.quantidadeCelulares;
+                    }
+                }
+                var tangle = new Tangle(rootElement, model);
+            }
+        </script>
+
+        <script type="text/front-matter">
+            title: "Article Title"
+            description: "description"
+            authors:
+            - Chris Olah: http://colah.github.io
+            - Shan Carter: http://shancarter.com
+            affiliations:
+            - Google Brain: http://g.co/brain
+            - Google Brain: http://g.co/brain
+        </script>
+
+        <script type="text/bibliography">
+            @article{gregor2015draw,
+              title={DRAW: A recurrent neural network for image generation},
+              author={Gregor, Karol and Danihelka, Ivo and Graves, Alex and Rezende, Danilo Jimenez and Wierstra, Daan},
+              journal={arXivreprint arXiv:1502.04623},
+              year={2015},
+              url={https://arxiv.org/pdf/1502.04623.pdf}
+            }
+        </script>
+
+        
+
+    </head>
+
+    <body onload="tangleTeste(),tangleTeste2()">
+
+            <dt-article class="centered">
+                    <h1>Título</h1>
+                    <h2>Teste de utilização das bibliotecas Tangle, Distill, e D3</h2>
+                    <dt-byline></dt-byline>
+                    <p id="calcularCelular">
+                            Se um celular custa <span class="TKAdjustableNumber" data-var="precoUnidade" data-min="1500" data-max="Infinity"> reais</span> então 
+                            <span class="TKAdjustableNumber" data-var="quantidadeCelulares" data-min="0" data-max="50"> celulares</span> custarão <b data-var="valorFinal"> reais</b>
+                    </p>
+
+                    <p id="aloca">
+                            Se um carro custa <span class="TKAdjustableNumber" data-var="precoUnidade" data-min="1500" data-max="Infinity"> reais</span> então 
+                            <span class="TKAdjustableNumber" data-var="quantidadeCelulares" data-min="0" data-max="50"> carros</span> custarão <b data-var="valorFinal"> reais</b>
+                    </p>
+
+                    <p>We can also cite <dt-cite key="gregor2015draw"></dt-cite> external publications.</p>
+            </dt-article>
+        
+            <dt-appendix>
+            </dt-appendix>
+
+        
+
+    </body>
+</html>
