@@ -2,6 +2,9 @@
     <head>
         <title>Teste com a biblioteca Tangle</title>
 
+        <!-- D3js -->
+        <script type="text/javascript" src="https://d3js.org/d3.v5.min.js"></script>
+
         <!-- Template Distill -->
         <script src="https://distill.pub/template.v1.js"></script>
 
@@ -34,7 +37,7 @@
 
             function tangleTeste2(){
 
-                var rootElement = document.getElementById("aloca");
+                var rootElement = document.getElementById("calcularCarro");
                 var model = {
                     initialize: function() {
                         this.precoUnidade = 30000;
@@ -79,15 +82,25 @@
                     <h1>Título</h1>
                     <h2>Teste de utilização das bibliotecas Tangle, Distill, e D3</h2>
                     <dt-byline></dt-byline>
+                    <h3>Teste biblioteca Tangle</h3>
                     <p id="calcularCelular">
                             Se um celular custa <span class="TKAdjustableNumber" data-var="precoUnidade" data-min="1500" data-max="Infinity"> reais</span> então 
                             <span class="TKAdjustableNumber" data-var="quantidadeCelulares" data-min="0" data-max="50"> celulares</span> custarão <b data-var="valorFinal"> reais</b>
                     </p>
 
-                    <p id="aloca">
+                    <p id="calcularCarro">
                             Se um carro custa <span class="TKAdjustableNumber" data-var="precoUnidade" data-min="1500" data-max="Infinity"> reais</span> então 
                             <span class="TKAdjustableNumber" data-var="quantidadeCelulares" data-min="0" data-max="50"> carros</span> custarão <b data-var="valorFinal"> reais</b>
                     </p>
+
+                    <h3>Introdução</h3>
+
+
+                    <h3>Metodologia</h3>
+
+                    <h3>Resultados</h3>
+
+                    <h3>Conclusão</h3>
 
                     <p>We can also cite <dt-cite key="gregor2015draw"></dt-cite> external publications.</p>
             </dt-article>
