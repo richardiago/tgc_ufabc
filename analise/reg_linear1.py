@@ -62,7 +62,7 @@ print(reg.summary())
 
 # Regressão 3 - incluir liga e posicao
 X = df[['height2', 'height', 'weight2', 'weight',
-        'age2', 'age', 'RateAve', 'England', 'France', 'Spain', 'Attacking Midfielder',
+        'age2', 'age', 'RateAve', 'Germany', 'England', 'France', 'Spain', 'Attacking Midfielder',
         'Center Back', 'Center Forward', 'Center Midfielder', 'Defensive Midfielder', 'Goalkeeper',
         'Left Fullback', 'Left Midfielder', 'Left Winger', 'Right Fullback',
         'Right Midfielder', 'Right Winger']]
