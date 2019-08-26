@@ -1,57 +1,62 @@
 <html>
-    <head>
-        <title>Teste com a biblioteca Tangle</title>
 
-        <!-- D3js -->
-        <script type="text/javascript" src="https://d3js.org/d3.v5.min.js"></script>
+<head>
+    <title>Teste com a biblioteca Tangle</title>
 
-        <!-- Template Distill -->
-        <script src="https://distill.pub/template.v1.js"></script>
+    <!-- D3js -->
+    <script type="text/javascript" src="https://d3js.org/d3.v5.min.js"></script>
 
-        <!-- Tangle -->
-        <script type="text/javascript" src="../Tangle/Tangle.js"></script>
+    <!-- Template Distill -->
+    <script src="https://distill.pub/template.v1.js"></script>
 
-        <!-- TangleKit (optional) -->
-        <link rel="stylesheet" href="../Tangle/TangleKit/TangleKit.css" type="text/css">
-        <script type="text/javascript" src="../Tangle/TangleKit/mootools.js"></script>
-        <script type="text/javascript" src="../Tangle/TangleKit/sprintf.js"></script>
-        <script type="text/javascript" src="../Tangle/TangleKit/BVTouchable.js"></script>
-        <script type="text/javascript" src="../Tangle/TangleKit/TangleKit.js"></script>
+    <!-- Tangle -->
+    <script type="text/javascript" src="../Tangle/Tangle.js"></script>
 
-        <script type="text/javascript">
+    <!-- TangleKit (optional) -->
+    <link rel="stylesheet" href="../Tangle/TangleKit/TangleKit.css" type="text/css">
+    <script type="text/javascript" src="../Tangle/TangleKit/mootools.js"></script>
+    <script type="text/javascript" src="../Tangle/TangleKit/sprintf.js"></script>
+    <script type="text/javascript" src="../Tangle/TangleKit/BVTouchable.js"></script>
+    <script type="text/javascript" src="../Tangle/TangleKit/TangleKit.js"></script>
 
-            function tangleTeste(){
+    <!-- Jquery -->
+    <script type="text/javascript" src="../Jquery/jquery-3.4.1.min.js"></script>
 
-                var rootElement = document.getElementById("calcularCelular");
-                var model = {
-                    initialize: function() {
-                        this.precoUnidade = 1500;
-                        this.quantidadeCelulares = 2;
-                    },
-                    update: function () {
-                        this.valorFinal = this.precoUnidade * this.quantidadeCelulares;
-                    }
-                }
-                var tangle = new Tangle(rootElement, model);
-            }
+    <!-- Script interativo -->
+    <script type="text/javascript" src="../script/interativo.js"></script>
 
-            function tangleTeste2(){
+    <!-- function tangleTeste(){
 
-                var rootElement = document.getElementById("calcularCarro");
-                var model = {
-                    initialize: function() {
-                        this.precoUnidade = 30000;
-                        this.quantidadeCelulares = 2;
-                    },
-                    update: function () {
-                        this.valorFinal = this.precoUnidade * this.quantidadeCelulares;
-                    }
-                }
-                var tangle = new Tangle(rootElement, model);
-            }
-        </script>
+    var rootElement = document.getElementById("calcularCelular");
+    var model = {
+    initialize: function() {
+    this.precoUnidade = 1500;
+    this.quantidadeCelulares = 2;
+    },
+    update: function () {
+    this.valorFinal = this.precoUnidade * this.quantidadeCelulares;
+    }
+    }
+    var tangle = new Tangle(rootElement, model);
+    }
 
-        <script type="text/front-matter">
+    function tangleTeste2(){
+
+    var rootElement = document.getElementById("calcularCarro");
+    var model = {
+    initialize: function() {
+    this.precoUnidade = 30000;
+    this.quantidadeCelulares = 2;
+    },
+    update: function () {
+    this.valorFinal = this.precoUnidade * this.quantidadeCelulares;
+    }
+    }
+    var tangle = new Tangle(rootElement, model);
+    }
+    </script> -->
+
+    <script type="text/front-matter">
             title: "Article Title"
             description: "description"
             authors:
@@ -62,7 +67,7 @@
             - Google Brain: http://g.co/brain
         </script>
 
-        <script type="text/bibliography">
+    <script type="text/bibliography">
             @article{gregor2015draw,
               title={DRAW: A recurrent neural network for image generation},
               author={Gregor, Karol and Danihelka, Ivo and Graves, Alex and Rezende, Danilo Jimenez and Wierstra, Daan},
@@ -72,43 +77,55 @@
             }
         </script>
 
-        
-
-    </head>
-
-    <body onload="tangleTeste(),tangleTeste2()">
-
-            <dt-article class="centered">
-                    <h1>Título</h1>
-                    <h2>Teste de utilização das bibliotecas Tangle, Distill, e D3</h2>
-                    <dt-byline></dt-byline>
-                    <h3>Teste biblioteca Tangle</h3>
-                    <p id="calcularCelular">
-                            Se um celular custa <span class="TKAdjustableNumber" data-var="precoUnidade" data-min="1500" data-max="Infinity"> reais</span> então 
-                            <span class="TKAdjustableNumber" data-var="quantidadeCelulares" data-min="0" data-max="50"> celulares</span> custarão <b data-var="valorFinal"> reais</b>
-                    </p>
-
-                    <p id="calcularCarro">
-                            Se um carro custa <span class="TKAdjustableNumber" data-var="precoUnidade" data-min="1500" data-max="Infinity"> reais</span> então 
-                            <span class="TKAdjustableNumber" data-var="quantidadeCelulares" data-min="0" data-max="50"> carros</span> custarão <b data-var="valorFinal"> reais</b>
-                    </p>
-
-                    <h3>Introdução</h3>
 
 
-                    <h3>Metodologia</h3>
+</head>
+<!-- onload="tangleTeste(),tangleTeste2()" -->
 
-                    <h3>Resultados</h3>
+<body>
 
-                    <h3>Conclusão</h3>
+    <dt-article class="centered">
+        <h1>Título</h1>
+        <h2>Teste de utilização das bibliotecas Tangle, Distill, e D3</h2>
+        <dt-byline></dt-byline>
+        <h3>Teste biblioteca Tangle</h3>
+        <p id="calcularCelular">
+            Se um celular custa <span class="TKAdjustableNumber" data-var="precoUnidade" data-min="1500"
+                data-max="Infinity"> reais</span> então
+            <span class="TKAdjustableNumber" data-var="quantidadeCelulares" data-min="0" data-max="50"> celulares</span>
+            custarão <b data-var="valorFinal"> reais</b>
+        </p>
 
-                    <p>We can also cite <dt-cite key="gregor2015draw"></dt-cite> external publications.</p>
-            </dt-article>
-        
-            <dt-appendix>
-            </dt-appendix>
+        <p id="calcularCarro">
+            Se um carro custa <span class="TKAdjustableNumber" data-var="precoUnidade" data-min="1500"
+                data-max="Infinity"> reais</span> então
+            <span class="TKAdjustableNumber" data-var="quantidadeCelulares" data-min="0" data-max="50"> carros</span>
+            custarão <b data-var="valorFinal"> reais</b>
+        </p>
 
-        
+        <h3>Introdução</h3>
+        <p id="container">
+            Cão
+        </p>
 
-    </body>
+        <p>
+            <img id="imagem" src="./images/cao.png" alt="imagem de teste" width=200 height=200>
+        </p>
+
+        <h3>Metodologia</h3>
+
+        <h3>Resultados</h3>
+
+        <h3>Conclusão</h3>
+
+        <p>We can also cite <dt-cite key="gregor2015draw"></dt-cite> external publications.</p>
+    </dt-article>
+
+    <dt-appendix>
+    </dt-appendix>
+
+
+
+</body>
+
 </html>
