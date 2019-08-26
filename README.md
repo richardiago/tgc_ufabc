@@ -5,4 +5,4 @@ Universidade Federal do ABC (UFABC) - 2019
 
 Centro de Matemática, Computação & Cognição
 
-Mini artigos cientificos baseados na metodologia EMAR (Explorable Multiverse Analysis Reports) usando bibliotecas Tangle, Distill, D3.
+Mini artigos cientificos baseados na metodologia EMAR (Explorable Multiverse Analysis Reports)
