@@ -1,10 +1,10 @@
 <html>
 
 <head>
-    <title>Teste com a biblioteca Tangle</title>
+    <title>Esqueleto de artigo interativo</title>
 
     <!-- D3js -->
-    <script type="text/javascript" src="https://d3js.org/d3.v5.min.js"></script>
+    <!-- <script type="text/javascript" src="https://d3js.org/d3.v5.min.js"></script> -->
 
     <!-- Template Distill -->
     <script src="https://distill.pub/template.v1.js"></script>
@@ -24,37 +24,6 @@
 
     <!-- Script interativo -->
     <script type="text/javascript" src="../script/interativo.js"></script>
-
-    <!-- function tangleTeste(){
-
-    var rootElement = document.getElementById("calcularCelular");
-    var model = {
-    initialize: function() {
-    this.precoUnidade = 1500;
-    this.quantidadeCelulares = 2;
-    },
-    update: function () {
-    this.valorFinal = this.precoUnidade * this.quantidadeCelulares;
-    }
-    }
-    var tangle = new Tangle(rootElement, model);
-    }
-
-    function tangleTeste2(){
-
-    var rootElement = document.getElementById("calcularCarro");
-    var model = {
-    initialize: function() {
-    this.precoUnidade = 30000;
-    this.quantidadeCelulares = 2;
-    },
-    update: function () {
-    this.valorFinal = this.precoUnidade * this.quantidadeCelulares;
-    }
-    }
-    var tangle = new Tangle(rootElement, model);
-    }
-    </script> -->
 
     <script type="text/front-matter">
             title: "Article Title"
@@ -80,45 +49,27 @@
 
 
 </head>
-<!-- onload="tangleTeste(),tangleTeste2()" -->
 
 <body>
 
     <dt-article class="centered">
-        <h1>Título</h1>
-        <h2>Teste de utilização das bibliotecas Tangle, Distill, e D3</h2>
+        <h1>Título do artigo</h1>
+        <h2>Teste de interatividade</h2>
         <dt-byline></dt-byline>
-        <h3>Teste biblioteca Tangle</h3>
-        <p id="calcularCelular">
-            Se um celular custa <span class="TKAdjustableNumber" data-var="precoUnidade" data-min="1500"
-                data-max="Infinity"> reais</span> então
-            <span class="TKAdjustableNumber" data-var="quantidadeCelulares" data-min="0" data-max="50"> celulares</span>
-            custarão <b data-var="valorFinal"> reais</b>
-        </p>
 
-        <p id="calcularCarro">
-            Se um carro custa <span class="TKAdjustableNumber" data-var="precoUnidade" data-min="1500"
-                data-max="Infinity"> reais</span> então
-            <span class="TKAdjustableNumber" data-var="quantidadeCelulares" data-min="0" data-max="50"> carros</span>
-            custarão <b data-var="valorFinal"> reais</b>
-        </p>
-
-        <h3>Introdução</h3>
+        <h3>Interatividade com o teclado</h3>
+        <p>Pressione a tecla 'a' para mudar texto e imagem.</p>
         <p id="container">
-            Cão
+            Somente tom de pele
         </p>
 
         <p>
-            <img id="imagem" src="./images/cao.png" alt="imagem de teste" width=200 height=200>
+            <img id="imagem" src="./images/tabelas/1.png" alt="imagem de teste" width=674 height=340>
         </p>
 
-        <h3>Metodologia</h3>
 
-        <h3>Resultados</h3>
 
-        <h3>Conclusão</h3>
-
-        <p>We can also cite <dt-cite key="gregor2015draw"></dt-cite> external publications.</p>
+        <p>Exemplo de citação <dt-cite key="gregor2015draw"></dt-cite>.</p>
     </dt-article>
 
     <dt-appendix>
