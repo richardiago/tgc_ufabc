@@ -1,8 +1,10 @@
 $(document).ready(function () {
 
     var p = 0;
-    var srcimg = ["./images/cao.png", "./images/gato.png", "./images/peixe.jpg", "./images/tartaruga.png"]
-    var textos = ["Cão", "Gato", "Peixe", "Tartaruga"]
+    var srcimg = ["./images/tabelas/1.png", "./images/tabelas/2.png", "./images/tabelas/3.png"]
+    var textos = ["Somente tom de pele", "Tom de pele, idade, idade², peso, peso², altura, altura²",
+        "Tom de pele, idade, idade², peso, peso², altura, altura², liga e posição"]
+    var tamanho = [{ width: 674, height: 340 }, { width: 676, height: 439 }, { width: 762, height: 694 }]
 
     $(document).keypress(function (e) {
 
@@ -10,7 +12,7 @@ $(document).ready(function () {
 
             if (p == srcimg.length) p = 0
             $('#container').text(textos[p])
-            $('#imagem').attr('src', srcimg[p]);
+            $('#imagem').attr({ 'src': srcimg[p], 'width': tamanho[p].width, 'height': tamanho[p].height });
             p++;
         }
     })
