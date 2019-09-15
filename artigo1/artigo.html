@@ -1,0 +1,82 @@
+<html>
+
+<head>
+    <title>Esqueleto de artigo interativo</title>
+
+    <!-- D3js -->
+    <!-- <script type="text/javascript" src="https://d3js.org/d3.v5.min.js"></script> -->
+
+    <!-- Template Distill -->
+    <script src="https://distill.pub/template.v1.js"></script>
+
+    <!-- Tangle -->
+    <script type="text/javascript" src="../Tangle/Tangle.js"></script>
+
+    <!-- TangleKit (optional) -->
+    <link rel="stylesheet" href="../Tangle/TangleKit/TangleKit.css" type="text/css">
+    <script type="text/javascript" src="../Tangle/TangleKit/mootools.js"></script>
+    <script type="text/javascript" src="../Tangle/TangleKit/sprintf.js"></script>
+    <script type="text/javascript" src="../Tangle/TangleKit/BVTouchable.js"></script>
+    <script type="text/javascript" src="../Tangle/TangleKit/TangleKit.js"></script>
+
+    <!-- Jquery -->
+    <script type="text/javascript" src="../Jquery/jquery-3.4.1.min.js"></script>
+
+    <!-- Script interativo -->
+    <script type="text/javascript" src="../script/interativo.js"></script>
+
+    <script type="text/front-matter">
+            title: "Article Title"
+            description: "description"
+            authors:
+            - Chris Olah: http://colah.github.io
+            - Shan Carter: http://shancarter.com
+            affiliations:
+            - Google Brain: http://g.co/brain
+            - Google Brain: http://g.co/brain
+        </script>
+
+    <script type="text/bibliography">
+            @article{gregor2015draw,
+              title={DRAW: A recurrent neural network for image generation},
+              author={Gregor, Karol and Danihelka, Ivo and Graves, Alex and Rezende, Danilo Jimenez and Wierstra, Daan},
+              journal={arXivreprint arXiv:1502.04623},
+              year={2015},
+              url={https://arxiv.org/pdf/1502.04623.pdf}
+            }
+        </script>
+
+
+
+</head>
+
+<body>
+
+    <dt-article class="centered">
+        <h1>Título do artigo</h1>
+        <h2>Teste de interatividade</h2>
+        <dt-byline></dt-byline>
+
+        <h3>Interatividade com o teclado</h3>
+        <p>Pressione a tecla 'a' para mudar texto e imagem.</p>
+        <p id="container">
+            Somente tom de pele
+        </p>
+
+        <p>
+            <img id="imagem" src="./images/tabelas/1.png" alt="imagem de teste" width=674 height=340>
+        </p>
+
+
+
+        <p>Exemplo de citação <dt-cite key="gregor2015draw"></dt-cite>.</p>
+    </dt-article>
+
+    <dt-appendix>
+    </dt-appendix>
+
+
+
+</body>
+
+</html>
