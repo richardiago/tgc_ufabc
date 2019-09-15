@@ -17,6 +17,14 @@ $(document).ready(function () {
         }
     })
 
+    $('#clc').click(function() {
+
+        if (p == srcimg.length) p = 0
+            $('#container2').text(textos[p])
+            $('#imagem2').attr({ 'src': srcimg[p], 'width': tamanho[p].width, 'height': tamanho[p].height });
+            p++;
+    }) 
+
 
 
 
