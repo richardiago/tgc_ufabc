@@ -26,23 +26,69 @@
     <script type="text/javascript" src="../script/interativo.js"></script>
 
     <script type="text/front-matter">
-            title: "Article Title"
-            description: "description"
-            authors:
+            title: "Análise multiverso de dados no esporte"
+            description: "Artigo que exemplifica a criação de um EMAR (Explorable Multiverse Analysis Report)"
+            <!-- authors:
             - Chris Olah: http://colah.github.io
             - Shan Carter: http://shancarter.com
             affiliations:
             - Google Brain: http://g.co/brain
-            - Google Brain: http://g.co/brain
+            - Google Brain: http://g.co/brain -->
         </script>
 
     <script type="text/bibliography">
-            @article{gregor2015draw,
-              title={DRAW: A recurrent neural network for image generation},
-              author={Gregor, Karol and Danihelka, Ivo and Graves, Alex and Rezende, Danilo Jimenez and Wierstra, Daan},
-              journal={arXivreprint arXiv:1502.04623},
-              year={2015},
-              url={https://arxiv.org/pdf/1502.04623.pdf}
+
+            @inproceedings{dragicevic:hal-01976951,
+                TITLE = {Increasing the Transparency of Research Papers with Explorable Multiverse Analyses},
+                AUTHOR = {Dragicevic, Pierre and Jansen, Yvonne and Sarma, Abhraneel and Kay, Matthew and Chevalier, Fanny},
+                URL = {https://hal.inria.fr/hal-01976951},
+                BOOKTITLE = {CHI 2019 - The ACM CHI Conference on Human Factors in Computing Systems},
+                ADDRESS = {Glasgow, United Kingdom},
+                YEAR = {2019},
+                MONTH = May,
+                DOI = {10.1145/3290605.3300295},
+                KEYWORDS = {multiverse analysis ; explorable explanation ; statistics ; transparent reporting ; interactive documents},
+                PDF = {https://hal.inria.fr/hal-01976951/file/Interactive_Paper_CHI2019_camera_ready.pdf},
+                HAL_ID = {hal-01976951},
+                HAL_VERSION = {v1},
+            }
+
+            @article{enhancing-research-publications-using-rich-interactive-narratives,
+                author = {Takeda, Kenji and Earl, Graeme and Frey, Jeremy and Keay, Simon and },
+                title = {Enhancing research publications using Rich Interactive Narratives},
+                year = {2012},
+                month = {December},
+                publisher = {The Royal Society},
+                url = {https://www.microsoft.com/en-us/research/publication/enhancing-research-publications-using-rich-interactive-narratives/},
+                journal = {Philosophical Transactions of the Royal Society A},
+                edition = {Philosophical Transactions of the Royal Society A},
+            }
+
+            @article{doi:10.1177/1745691616658637,
+                author = {Sara Steegen and Francis Tuerlinckx and Andrew Gelman and Wolf Vanpaemel},
+                title ={Increasing Transparency Through a Multiverse Analysis},
+                journal = {Perspectives on Psychological Science},
+                volume = {11},
+                number = {5},
+                pages = {702-712},
+                year = {2016},
+                doi = {10.1177/1745691616658637},
+                note ={PMID: 27694465},
+                URL = {https://doi.org/10.1177/1745691616658637},
+                eprint = {https://doi.org/10.1177/1745691616658637}
+            }
+
+            @article{doi:10.1177/2515245917747646,
+                author = {R. Silberzahn and E. L. Uhlmann and D. P. Martin and P. Anselmi and F. Aust and E. Awtrey and Š. Bahník and F. Bai and C. Bannard and E. Bonnier and R. Carlsson and F. Cheung and G. Christensen and R. Clay and M. A. Craig and A. Dalla Rosa and L. Dam and M. H. Evans and I. Flores Cervantes and N. Fong and M. Gamez-Djokic and A. Glenz and S. Gordon-McKeon and T. J. Heaton and K. Hederos and M. Heene and A. J. Hofelich Mohr and F. Högden and K. Hui and M. Johannesson and J. Kalodimos and E. Kaszubowski and D. M. Kennedy and R. Lei and T. A. Lindsay and S. Liverani and C. R. Madan and D. Molden and E. Molleman and R. D. Morey and L. B. Mulder and B. R. Nijstad and N. G. Pope and B. Pope and J. M. Prenoveau and F. Rink and E. Robusto and H. Roderique and A. Sandberg and E. Schlüter and F. D. Schönbrodt and M. F. Sherman and S. A. Sommer and K. Sotak and S. Spain and C. Spörlein and T. Stafford and L. Stefanutti and S. Tauber and J. Ullrich and M. Vianello and E.-J. Wagenmakers and M. Witkowiak and S. Yoon and B. A. Nosek},
+                title ={Many Analysts, One Data Set: Making Transparent How Variations in Analytic Choices Affect Results},
+                journal = {Advances in Methods and Practices in Psychological Science},
+                volume = {1},
+                number = {3},
+                pages = {337-356},
+                year = {2018},
+                doi = {10.1177/2515245917747646},
+                URL = { https://doi.org/10.1177/2515245917747646},
+                eprint = {https://doi.org/10.1177/2515245917747646}
             }
         </script>
 
@@ -53,9 +99,56 @@
 <body>
 
     <dt-article class="centered">
-        <h1>Título do artigo</h1>
-        <h2>Teste de interatividade</h2>
+        <h1>Análise multiverso de dados no esporte</h1>
+        <h2>Influência da cor da pele em expulsões em partidas de futebol</h2>
         <dt-byline></dt-byline>
+
+
+        <h3>Introdução</h3>
+
+        <p align="justify">
+            Durante o desenvolvimento de um estudo/pesquisa cientifica é normal que existam diferentes técnicas e/ou
+            procedimentos para realizar uma mesma tarefa. Todas as combinações possiveis de opções disponiveis
+            forma o que podemos chamar de
+            <dt-cite key="doi:10.1177/1745691616658637"><i>multiverso</i></dt-cite>
+            de possibilidades de abordar um mesmo problema. O
+            cientista
+            por sua vez escolhe as opções que lhe parecem mais adequadas, escolhendo assim uma das soluções deste
+            multiverso.
+        </p>
+        <p align="justify">
+            Porém essa ampla variedade de escolhas possiveis traz a tona questões relacionadas por exemplo a como
+            validar as escolhas realizadas pelo cientista ao abordar o objeto em estudo, quais outras opções
+            trariam resultados semelhantes, além de como melhorar a transparência dos resultados obtidos ao
+            apresentá-los.
+        </p>
+        <p align="justify">
+            Pensando na questão da apresentação dos diferentes resultados possiveis de serem alcançados em uma
+            exploração multiverso, surge o conceito de <dt-cite key="dragicevic:hal-01976951">EMAR</dt-cite>
+            (Explorable Multiverse Analysis Report) que podem ser
+            entendidos como artigos interativos que possibilitam a apresentação e visualização de multiplas analises de
+            um mesmo objeto de estudo.
+
+        </p>
+        <p align="justify">
+            Para tanto usaremos como exemplo o artigo <dt-cite key="doi:10.1177/2515245917747646"><i> Many Analysts, One
+                    Data Set: Making Transparent How Variations in Analytic Choices Affect Results</i></dt-cite> no qual
+            foram realizadas diversas analises de dados utilizando técnicas diferentes para abordar um mesmo problema:
+            "A cor
+            da pele influencia a incidência de cartões vermelhos?"
+
+        </p>
+
+
+        <h3>Metodologia</h3>
+
+
+        <h3>Resultados</h3>
+
+
+
+
+
 
         <h3>Interatividade com o teclado</h3>
         <p>Pressione a tecla 'a' para mudar texto e imagem.</p>
@@ -68,7 +161,7 @@
         </p>
 
         <h3>Interatividade com o clique do mouse</h3>
-        <p > Clique <b id="clc">aqui</b> para alterar tela.</p>
+        <p> Clique <b id="clc">aqui</b> para alterar tela.</p>
         <p id="container2">
             Somente tom de pele
         </p>
@@ -79,7 +172,7 @@
 
 
 
-        <p>Exemplo de citação <dt-cite key="gregor2015draw"></dt-cite>.</p>
+
     </dt-article>
 
     <dt-appendix>
