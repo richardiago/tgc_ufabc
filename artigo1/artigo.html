@@ -126,24 +126,73 @@
             Pensando na questão da apresentação dos diferentes resultados possíveis de serem alcançados em uma
             exploração multiverso, surge o conceito de <dt-cite key="dragicevic:hal-01976951">EMAR</dt-cite>
             (Explorable Multiverse Analysis Report) que pode ser
-            entendidp como um artigo interativo que possibilita a apresentação e visualização de múltiplas análises de
+            entendido como um artigo interativo que possibilita a apresentação e visualização de múltiplas análises de
             um mesmo objeto de estudo.
 
         </p>
         <p align="justify">
-            Para tanto usaremos como exemplo o artigo <dt-cite key="doi:10.1177/2515245917747646"><i> Many Analysts, One
-                    Data Set: Making Transparent How Variations in Analytic Choices Affect Results</i></dt-cite> no qual
+            Para exemplificar este conceito, procuraremos transformar o artigo <dt-cite
+                key="doi:10.1177/2515245917747646"><i> Many Analysts, One
+                    Data Set: Making Transparent How Variations in Analytic Choices Affect Results</i></dt-cite> em um
+            EMAR. Neste artigo
             foram realizadas diversas análises de dados utilizando técnicas diferentes para abordar um mesmo problema:
-            "A cor
-            da pele influencia a incidência de cartões vermelhos?"
+            "A cor da pele de um jogador de futebol influencia a incidência de cartões vermelhos?".
 
         </p>
 
 
+        <h3>Artigo original</h3>
+        <p align="justify">
+
+            Para montar o <i>dataset</i> utilizado no estudo, os responsaveis pelo artigo em questão coletaram
+            informações
+            demográficas de todos os atletas que atuaram na primeira divisão masculina de futebol da Inglaterra,
+            Alemanha, França e Espanha durante a temporada 2012-2013.
+        </p>
+
+        <p align="justify">
+            Foram coletadas informações como peso, altura, idade, clube, posição, país da liga, número de cartões
+            vermelhos,
+            número de cartões amarelos, além também de incluir dados sobre as interações de cada jogador com cada
+            árbitro durante o
+            período analisado.
+
+        </p>
+        <p align="justify">
+            Além dessas informações foram obtidas fotos dos jogadores, e a partir das mesmas os jogadores foram
+            classificados
+            de acordo com o tom de pele por dois avaliadores independentes em uma escala de varia de 0 (pele muito
+            clara) à 1 (pele muito escura).
+        </p>
+
+        <P align="justify">
+            A partir dos dados coletados, vários pesquisadores de diferentes áreas foram organizados em times e cada
+            qual
+            estava livre para utilizar as técnicas que julgarem mais apropriadas para abordar a questão, sempre com
+            rodadas
+            de feedback entre os times.
+        </P>
+
         <h3>Metodologia</h3>
 
+        <p align="justify">
+            Primeiramente foram retirados do dataset todos as instâncias que tinham qualquer dado nulo ou ausente
 
-        <h3>Resultados</h3>
+
+        </p>
+
+        <p align="justify">
+            Nesta analise foi utilizada a regressão linear como formar de prever o número de cartões vermelhos e assim
+            poder verificar qual o coeficiente atribuido à variavel tom de pele para decidir se a mesma é fator
+            determinante
+            na decisão de um juiz atribuir um cartão vermelhos a um jogador de futebol.
+        </p>
+
+        <p align="justify">
+            A(s) seguintes variaveis foram utilizadas para realizar a regressão: tom de pele, idade, idade², peso,
+            peso², altura, altura².
+
+        </p>
 
 
 
