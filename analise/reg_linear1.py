@@ -61,6 +61,13 @@ X = df[['RateAve']]
 Y = df['cartoesVermelhos']
 
 reg = sm.OLS(Y, X).fit()
+
+# Tabela em latex
+# tabela = reg.summary().as_latex()
+# arq = open('resultado1', 'w')
+# arq.write(tabela)
+# arq.close()
+
 print(reg.summary())
 
 # Regressão 2 - tom de pele, idade, idade², peso, peso², altura, altura²
@@ -68,6 +75,13 @@ X = df[['height2', 'height', 'weight2', 'weight', 'age2', 'age', 'RateAve']]
 Y = df['cartoesVermelhos']
 
 reg = sm.OLS(Y, X).fit()
+
+# Tabela em latex
+# tabela = reg.summary().as_latex()
+# arq = open('resultado2', 'w')
+# arq.write(tabela)
+# arq.close()
+
 print(reg.summary())
 
 # Regressão 3 - incluir liga e posicao
@@ -79,4 +93,13 @@ X = df[['height2', 'height', 'weight2', 'weight',
 Y = df['cartoesVermelhos']
 
 reg = sm.OLS(Y, X).fit()
+
+# Tabela em latex
+# tabela = reg.summary().as_latex()
+# arq = open('resultado3', 'w')
+# arq.write(tabela)
+# arq.close()
+
 print(reg.summary())
+
+
