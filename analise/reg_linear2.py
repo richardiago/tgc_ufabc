@@ -3,6 +3,7 @@
 """
 @author: iago
 Time: 8
+Não faz expansão dos dados
 """
 
 import scipy as sp
@@ -14,7 +15,7 @@ import statsmodels.formula.api as sm
 data = pd.read_csv('CrowdstormingDataJuly1st.csv')
 data = data[['club', 'leagueCountry', 'birthday', 'height', 'weight',
              'position', 'games', 'redCards', 'rater1', 'rater2', 'refNum',
-             'meanExp', 'meanIAT', 'victories', 'games']]
+             'meanExp', 'meanIAT', 'victories']]
 
 # Retirar valores ausentes
 data = data.dropna()
@@ -37,4 +38,12 @@ X = data[['RateAve', 'Germany', 'England', 'France', 'Spain', 'Attacking Midfiel
 Y = data['redCards']
 
 reg = sm.OLS(Y, X).fit()
+
+# Tabela em latex
+# tabela = reg.summary().as_latex()
+# arq = open('resultado1', 'w')
+# arq.write(tabela)
+# arq.close()
+
+
 print(reg.summary())
