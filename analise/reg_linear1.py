@@ -3,6 +3,7 @@
 """
 @author: iago
 Time: 1
+Faz expansão dos dados
 """
 
 import scipy as sp
