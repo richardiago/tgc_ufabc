@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 @author: iago
-Time: 
+Time: 31
 """
 
 import scipy as sp
@@ -12,37 +12,35 @@ import statsmodels.formula.api as sm
 
 
 # Importar dados
-data = pd.read_csv('CrowdstormingDataJuly1st.csv')
-data = data[['club', 'leagueCountry', 'birthday', 'height', 'weight',
-             'position', 'games', 'redCards', 'rater1', 'rater2', 'refNum',
-             'meanExp', 'meanIAT', 'victories']]
+df = pd.read_csv('CrowdstormingDataJuly1st.csv')
+data = df[['club', 'leagueCountry', 'height', 'weight',
+             'position', 'redCards', 'games', 'rater1', 'rater2']]
 
-# Retirar valores ausentes
+# Retirar todos os valores ausentes
 data = data.dropna()
 
 # Média para tom de pele
 data['RateAve'] = (data['rater1']+data['rater2'])/2
+data = data.drop(['rater1', 'rater2'], axis=1)
 
-# Variáveis dummy para 'posição' e 'país da liga'
+# Variáveis dummy para 'posição', 'país da liga' e 'time'
 position = pd.get_dummies(data['position'])
 data = pd.concat([data, position], axis=1)
 
 leagueCountry = pd.get_dummies(data['leagueCountry'])
 data = pd.concat([data, leagueCountry], axis=1)
 
-# Regressão
-X = data[['RateAve', 'Germany', 'England', 'France', 'Spain', 'Attacking Midfielder',
-          'Center Back', 'Center Forward', 'Center Midfielder', 'Defensive Midfielder', 'Goalkeeper',
-          'Left Fullback', 'Left Midfielder', 'Left Winger', 'Right Fullback',
-          'Right Midfielder', 'Right Winger', 'meanExp', 'meanIAT', 'victories', 'games']]
+club = pd.get_dummies(data['club'])
+data = pd.concat([data, club], axis=1)
 
+data = data.drop(['position', 'leagueCountry', 'club'], axis=1)
+
+# Regressão
+X = data.drop('redCards', axis=1)
+
+# Variavel redCards entre 0 e 1
 c = data['redCards']
 Y = c/c.max()
-
-
-
-
 reg = sm.Logit(Y, X).fit()
 
 print(reg.summary())
-
