@@ -8,7 +8,7 @@ Time: 31
 import scipy as sp
 import pandas as pd
 from sklearn.linear_model import LogisticRegressionCV
-
+from sklearn.linear_model import LogisticRegression
 
 # Importar dados
 df = pd.read_csv('CrowdstormingDataJuly1st.csv')
@@ -39,17 +39,24 @@ X = data.drop('redCards', axis=1)
 Y = data['redCards']
 
 
-# Regressão usando penalidade l1
-lr1 = LogisticRegressionCV(cv=6, penalty='l1', solver='liblinear').fit(X, Y)
+# # Regressão usando penalidade l1
+# lr1 = LogisticRegressionCV(cv=6, penalty='l1', solver='saga').fit(X, Y)
 
-coef = pd.DataFrame(lr1.coef_, X.columns, columns=['Coefficients'])
-print('Coeficientes usando l1')
-print(coef)
+# coef = pd.DataFrame(lr1.coef_, X.columns, columns=['Coefficients'])
+# print('Coeficientes usando l1')
+# print(coef)
 
 
-# Regressão usando penalidade l2
-lr2 = LogisticRegressionCV(cv=6, penalty='l2', solver='liblinear').fit(X, Y)
+# # Regressão usando penalidade l2
+# lr2 = LogisticRegressionCV(cv=6, penalty='l2', solver='saga').fit(X, Y)
 
-coef = pd.DataFrame(lr2.coef_, X.columns, columns=['Coefficients'])
-print('Coeficientes usando l2')
-print(coef)
+# coef = pd.DataFrame(lr2.coef_, X.columns, columns=['Coefficients'])
+# print('Coeficientes usando l2')
+# print(coef)
+
+# Regressão sem penalidade
+lr3 = LogisticRegression().fit(X, Y)
+
+# coef = pd.DataFrame(lr3.coef_, X.columns, columns=['Coefficients'])
+# print('Regressão sem penalidade')
+print(lr3.summary2())
