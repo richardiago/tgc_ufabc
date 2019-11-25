@@ -136,15 +136,15 @@
                     Data Set: Making Transparent How Variations in Analytic Choices Affect Results</i></dt-cite> em um
             EMAR. Neste artigo
             foram realizadas diversas análises de dados utilizando técnicas diferentes para abordar um mesmo problema:
-            "A cor da pele de um jogador de futebol influencia a incidência de cartões vermelhos?".
+            "A cor da pele de um jogador de futebol pode influenciar a incidência de cartões vermelhos?".
 
         </p>
 
 
-        <h3>Artigo original</h3>
+        <h3>Artigo base</h3>
         <p align="justify">
 
-            Para montar o <i>dataset</i> utilizado no estudo, os responsaveis pelo artigo em questão coletaram
+            Para montar o <i>dataset</i> utilizado no estudo, os responsáveis pelo artigo em questão coletaram
             informações
             demográficas de todos os atletas que atuaram na primeira divisão masculina de futebol da Inglaterra,
             Alemanha, França e Espanha durante a temporada 2012-2013.
@@ -176,13 +176,15 @@
         <h3>Metodologia</h3>
 
         <p align="justify">
-            Primeiramente foram retiradas do <i>dataset</i> todos as instâncias que tinham qualquer dado nulo/ausente além de 
-            criarmos uma nova variável para armazenar a média das avaliações feitas para a variável <i>tom de pele</i>. 
-
-
+            Dentre todos os times, foram escolhidos para reprodução de suas análises aqueles que utilizaram algum método
+            de
+            regressão linear e logística. Um passo em comum para todos os times foi a retirada de dados nulos/ausentes
+            além
+            da criação de uma nova variável para armazenar a média das avaliações feitas para a variável <i>tom de
+                pele</i>.
         </p>
 
-        <p align="justify">
+        <!-- <p align="justify">
             Nesta análise foi utilizada a <b><span id="metodo">regressão linear</span></b> como forma de prever o número de cartões vermelhos e assim
             poder verificar qual o coeficiente atribuido à variável <i>tom de pele</i> para decidir se a mesma é fator
             determinante
@@ -193,9 +195,58 @@
             As seguintes variaveis foram utilizadas para realizar a regressão: tom de pele, idade, idade², peso,
             peso², altura, altura².
 
+        </p> -->
+
+        <h3>Regressão Linear</h3>
+
+        <p align="justify">
+            Utilizando um modelo de regressão linear tentou-se prever o número de cartões vermelhos e assim
+            poder verificar qual o coeficiente atribuido à variável <i>tom de pele</i> para decidir se a mesma é fator
+            determinante na decisão de um juiz atribuir um cartão vermelho a um jogador de futebol. Além disso,
+            <id="expansão">este time não usou nenhuma forma de expansão dos dados.</id>
         </p>
 
-        <h3>Resultados</h3>
+        <p align="justify">
+            Para tanto foi considerado o seguinte conjunto de variáveis preditoras:
+
+            <span id="variaveis">
+                Tom de pele.
+            </span>
+
+        </p>
+
+        <p align="justify">
+            Assim obtivemos o resultado exibido na seguinte tabela:
+            <br>
+            <br>
+
+            <table >
+                <tr>
+                    <th>Tipo de Penalização </th>
+                    <td><input type="radio" name="reg" value="l1">Penalização L1 </td>
+                    <td><input type="radio" name="reg" value="l2">Penalização L2 </td>
+                </tr>
+                <tr>
+                    <th>Expansão de dados </th>
+                    <td><input type="radio" name="expansao" value="se">Sem expansão dos dados </td>
+                    <td><input type="radio" name="expansao" value="ce">Com expansão dos dados </td>
+                </tr>
+            </table>
+
+
+            <span id="tabela_linear">
+
+            </span>
+        </p>
+
+
+        <h3>Regressão Logística</h3>
+
+
+
+
+
+
 
 
 

@@ -2,10 +2,10 @@ $(document).ready(function () {
 
     var metodo = ["regressão linear","regressão linear","regressão linear","regressão logística"]
 
-    var variaveis = ["Foi utilizada a variável tom de pele para a regressão.",
-                    "As seguintes variáveis foram utilizadas para realizar a regressão: tom de pele, idade, idade², peso, peso², altura, altura².",
-                    "As seguintes variáveis foram utilizadas para realizar a regressão: tom de pele, idade, idade², peso, peso², altura, altura², liga e posição.", 
-                    "Texto para regressão logistica"]
+    var variaveis = ["Tom de pele.",
+                    "Tom de pele, idade, idade², peso, peso², altura, altura².",
+                    "Tom de pele, idade, idade², peso, peso², altura, altura², liga e posição.", 
+                    ]
     
     var resultados = []
 
