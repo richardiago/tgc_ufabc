@@ -23,7 +23,7 @@
     <script type="text/javascript" src="../Jquery/jquery-3.4.1.min.js"></script>
 
     <!-- Script interativo -->
-    <script type="text/javascript" src="../script/interativo.js"></script>
+    <script type="text/javascript" src="../script/interativo2.js"></script>
 
     <script type="text/front-matter">
             title: "Análise multiverso de dados no esporte"
@@ -203,15 +203,17 @@
             Utilizando um modelo de regressão linear tentou-se prever o número de cartões vermelhos e assim
             poder verificar qual o coeficiente atribuido à variável <i>tom de pele</i> para decidir se a mesma é fator
             determinante na decisão de um juiz atribuir um cartão vermelho a um jogador de futebol.
-            
+
         </p>
 
         <p align="justify">
             Para tanto foi considerado o seguinte conjunto de variáveis preditoras:<br><br>
 
-            <span id="variaveis">
-                Tom de pele.
-            </span>
+            <input type="radio" class="clique" name="var" value="1" checked="checked">Somente tom de pele <br>
+            <input type="radio" class="clique" name="var" value="2">Tom de pele, idade, idade², peso, peso², altura,
+            altura² <br>
+            <input type="radio" class="clique" name="var" value="3">Tom de pele, idade, idade², peso, peso², altura,
+            altura², liga e posição <br>
 
         </p>
 
@@ -220,25 +222,27 @@
             <br>
             <br>
 
-            <table >
+            <table>
                 <tr>
                     <th>Tipo de Penalização </th>
-                    <td><input type="radio" name="reg" value="l1">Penalização L1 </td>
-                    <td><input type="radio" name="reg" value="l2">Penalização L2 </td>
+                    <td><input type="radio" class="clique" name="pen" value="1" checked="checked">Penalização L1 </td>
+                    <td><input type="radio" class="clique" name="pen" value="2">Penalização L2 </td>
                 </tr>
                 <tr>
                     <th>Expansão de dados </th>
-                    <td><input type="radio" name="expansao" value="se">Sem expansão dos dados </td>
-                    <td><input type="radio" name="expansao" value="ce">Com expansão dos dados </td>
+                    <td><input type="radio" class="clique" name="expansao" value="1" checked="checked">Sem expansão dos
+                        dados </td>
+                    <td><input type="radio" class="clique" name="expansao" value="2">Com expansão dos dados </td>
                 </tr>
             </table>
 
 
 
             <!-- Tabela de resultados -->
-            <span id="tabela_linear">
+            <p align="justify" id="tabela">
 
-            </span>
+
+            </p>
         </p>
 
 
@@ -257,25 +261,7 @@
 
 
 
-        <h3>Interatividade com o teclado</h3>
-        <p>Pressione a tecla 'a' para mudar texto e imagem.</p>
-        <p id="container">
-            Somente tom de pele
-        </p>
 
-        <p>
-            <img id="imagem" src="./images/tabelas/1.png" alt="imagem de teste" width=674 height=340>
-        </p>
-
-        <h3>Interatividade com o clique do mouse</h3>
-        <p> Clique <b id="clc">aqui</b> para alterar tela.</p>
-        <p id="container2">
-            Somente tom de pele
-        </p>
-
-        <p>
-            <img id="imagem2" src="./images/tabelas/1.png" alt="imagem de teste" width=674 height=340>
-        </p>
 
 
 
