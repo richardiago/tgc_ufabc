@@ -6,6 +6,8 @@ $(document).ready(function () {
                     "Tom de pele, idade, idade², peso, peso², altura, altura².",
                     "Tom de pele, idade, idade², peso, peso², altura, altura², liga e posição.", 
                     ]
+
+    var tabelas = []
     
     var resultados = []
 
@@ -24,6 +26,7 @@ $(document).ready(function () {
             if (p == metodo.length) p = 0
             $('#metodo').text(metodo[p])
             $('#variaveis').text(variaveis[p])
+            $("#tabela_linear").text()
             // $('#container').text(textos[p])
             // $('#imagem').attr({ 'src': srcimg[p], 'width': tamanho[p].width, 'height': tamanho[p].height });
             p++;
