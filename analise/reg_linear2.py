@@ -23,6 +23,15 @@ data = data.dropna()
 # Média para tom de pele
 data['RateAve'] = (data['rater1']+data['rater2'])/2
 
+# Idade
+age = pd.to_datetime(data['birthday'])
+data['age'] = 2013 - age.dt.year
+
+# Variaveis ao quadrado
+data['age2'] = data['age']**2
+data['weight2'] = data['weight']**2
+data['height2'] = data['height']**2
+
 # Variáveis dummy para 'posição' e 'país da liga'
 position = pd.get_dummies(data['position'])
 data = pd.concat([data, position], axis=1)
@@ -31,19 +40,23 @@ leagueCountry = pd.get_dummies(data['leagueCountry'])
 data = pd.concat([data, leagueCountry], axis=1)
 
 # Regressão
+#X = data[['RateAve']]
+#X = data[['RateAve', 'age', 'age2', 'weight', 'weight2', 'height', 'height2']]
+          
 X = data[['RateAve', 'Germany', 'England', 'France', 'Spain', 'Attacking Midfielder',
           'Center Back', 'Center Forward', 'Center Midfielder', 'Defensive Midfielder', 'Goalkeeper',
           'Left Fullback', 'Left Midfielder', 'Left Winger', 'Right Fullback',
-          'Right Midfielder', 'Right Winger', 'meanExp', 'meanIAT', 'victories', 'games']]
+          'Right Midfielder', 'Right Winger', 'age', 'age2', 'weight', 'weight2', 'height', 'height2']]
+          
 Y = data['redCards']
 
 reg = sm.OLS(Y, X).fit()
 
-# Tabela em latex
-# tabela = reg.summary().as_latex()
-# arq = open('resultado1', 'w')
-# arq.write(tabela)
-# arq.close()
+#Tabela em latex
+tabela = reg.summary().as_latex()
+arq = open('resultado1', 'w')
+arq.write(tabela)
+arq.close()
 
 
 print(reg.summary())
