@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>Esqueleto de artigo interativo</title>
+    <title>Análise multiverso de dados no esporte</title>
 
     <!-- D3js -->
     <!-- <script type="text/javascript" src="https://d3js.org/d3.v5.min.js"></script> -->
@@ -209,11 +209,13 @@
         <p align="justify">
             Para tanto foi considerado o seguinte conjunto de variáveis preditoras:<br><br>
 
-            <input type="radio" class="clique" name="var" value="1" checked="checked">Somente tom de pele <br>
-            <input type="radio" class="clique" name="var" value="2">Tom de pele, idade, idade², peso, peso², altura,
-            altura² <br>
-            <input type="radio" class="clique" name="var" value="3">Tom de pele, idade, idade², peso, peso², altura,
-            altura², liga e posição <br>
+            <input type="radio" class="clique" name="var" value="1" checked="checked">Somente <i>tom de pele</i><br>
+            <input type="radio" class="clique" name="var" value="2"><i>Tom de pele</i>, <i>idade</i>, <i>idade²</i>, <i>peso</i>,<i>peso²</i>, <i>altura</i>,
+            <i>altura²</i> <br>
+            <input type="radio" class="clique" name="var" value="3"><i>Tom de pele</i>, <i>idade</i>, <i>idade²</i>, <i>peso</i>, <i>peso²</i>, <i>altura</i>,
+            <i>altura²</i>, <i>liga</i> e <i>posição</i> <br>
+            <input type="radio" class="clique" name="var" value="4"><i>Tom de pele</i>, <i>idade</i>, <i>idade²</i>, <i>peso</i>, <i>peso²</i>, <i>altura</i>,
+            <i>altura²</i>, <i>liga</i>, <i>posição</i>, quantidade de <i>jogos</i> e <i>vitórias</i> <br>
 
         </p>
 
@@ -222,7 +224,7 @@
             <br>
             <br>
 
-            <table>
+            <table id="escolhas">
                 <tr>
                     <th>Tipo de Penalização </th>
                     <td><input type="radio" class="clique" name="pen" value="1" checked="checked">Penalização L1 </td>
@@ -239,10 +241,12 @@
 
 
             <!-- Tabela de resultados -->
-            <p align="justify" id="tabela">
-
+            <p align="justify">
+                    <img id="imagem" src="./tabelas/1.png" width="100%" style="min-height: 426px" alt="some text"/>
+                
 
             </p>
+            
         </p>
 
 
