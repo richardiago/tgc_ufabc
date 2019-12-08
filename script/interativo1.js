@@ -8,6 +8,7 @@ $(document).ready(function () {
 .tg .tg-baqh{text-align:center;vertical-align:top}
 </style>
 <table class="tg">
+  
   <tr>
     <th class="tg-ot37">Variável</th>
     <th class="tg-ot37">Coeficiente</th>
@@ -18,7 +19,7 @@ $(document).ready(function () {
   </tr>
 </table>`
 
-var tab_2_1 = `<style type="text/css">
+  var tab_2_1 = `<style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
 .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
@@ -26,6 +27,7 @@ var tab_2_1 = `<style type="text/css">
 .tg .tg-baqh{text-align:center;vertical-align:top}
 </style>
 <table class="tg">
+  
   <tr>
     <th class="tg-ot37">Variável</th>
     <th class="tg-ot37">Coeficiente</th>
@@ -60,7 +62,7 @@ var tab_2_1 = `<style type="text/css">
   </tr>
 </table>`
 
-var tab_3_1 = `<style type="text/css">
+  var tab_3_1 = `<style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
 .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
@@ -68,6 +70,7 @@ var tab_3_1 = `<style type="text/css">
 .tg .tg-baqh{text-align:center;vertical-align:top}
 </style>
 <table class="tg">
+  
   <tr>
     <th class="tg-ot37">Variável</th>
     <th class="tg-ot37">Coeficiente</th>
@@ -166,7 +169,7 @@ var tab_3_1 = `<style type="text/css">
   </tr>
 </table>`
 
-var tab_4 = `<style type="text/css">
+  var tab_4 = `<style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
 .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
@@ -256,7 +259,7 @@ var tab_4 = `<style type="text/css">
   </tr>
 </table>`
 
-var tab_1_2_1 = `<style type="text/css">
+  var tab_1_2_1 = `<style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
 .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
@@ -270,11 +273,11 @@ var tab_1_2_1 = `<style type="text/css">
   </tr>
   <tr>
     <td class="tg-baqh">Média de tom de pele</td>
-    <td class="tg-baqh">0.0</td>
+    <td class="tg-baqh">0.00000</td>
   </tr>
 </table>`
 
-var tab_2_2_1 = `<style type="text/css">
+  var tab_2_2_1 = `<style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
 .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
@@ -316,7 +319,7 @@ var tab_2_2_1 = `<style type="text/css">
   </tr>
 </table>`
 
-var tab_3_2_1 = `<style type="text/css">
+  var tab_3_2_1 = `<style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
 .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
@@ -422,7 +425,7 @@ var tab_3_2_1 = `<style type="text/css">
   </tr>
 </table>`
 
-var tab_1_2_2 = `<style type="text/css">
+  var tab_1_2_2 = `<style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
 .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
@@ -440,7 +443,7 @@ var tab_1_2_2 = `<style type="text/css">
   </tr>
 </table>`
 
-var tab_2_2_2 = `<style type="text/css">
+  var tab_2_2_2 = `<style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
 .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
@@ -482,7 +485,7 @@ var tab_2_2_2 = `<style type="text/css">
   </tr>
 </table>`
 
-var tab_3_2_2 = `<style type="text/css">
+  var tab_3_2_2 = `<style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
 .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
@@ -589,16 +592,16 @@ var tab_3_2_2 = `<style type="text/css">
 </table>`
 
   $("#penalizacao").hide();
-  
+
   //Valores iniciais
   var v = $("input[name='var']:checked").val();
   var e = $("input[name='expansao']:checked").val();
   var p = $("input[name='pen']:checked").val();
-  
+
 
   var tab = "";
   $("#tabela").html(tab_1_1);
-  
+
 
   //Interação com o teclado
   $(".clique").click(function () {
@@ -607,14 +610,14 @@ var tab_3_2_2 = `<style type="text/css">
     v = $("input[name='var']:checked").val();
     e = $("input[name='expansao']:checked").val();
     p = $("input[name='pen']:checked").val();
-    
+
 
     //Se opção 4 de "var" é escolhida
     if ($("input[name='var']:checked").val() == 4) {
 
       $("#escolhas").hide();
       tab = "tab_4";
-      
+
 
     }
     else {
@@ -625,19 +628,19 @@ var tab_3_2_2 = `<style type="text/css">
       if ($("input[name='expansao']:checked").val() == 1) {
 
         $("#penalizacao").hide();
-        tab = "tab_" + v + "_" + e;       
+        tab = "tab_" + v + "_" + e;
 
       }
 
       else {
         $("#penalizacao").show();
         tab = "tab_" + v + "_" + e + "_" + p;
-        
+
       }
 
     }
 
-    switch(tab){
+    switch (tab) {
 
       case "tab_1_1":
         $("#tabela").html(tab_1_1);
@@ -650,7 +653,7 @@ var tab_3_2_2 = `<style type="text/css">
       case "tab_3_1":
         $("#tabela").html(tab_3_1);
         break;
-        
+
       case "tab_1_2_1":
         $("#tabela").html(tab_1_2_1);
         break;
