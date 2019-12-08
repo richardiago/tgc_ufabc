@@ -107,14 +107,15 @@
         <h3>Resumo</h3>
 
         <p align="justify">
-                A área da computação que abrange a ciência de dados está repleta de métodos e técnicas para realizar 
-                uma mesma tarefa, sendo assim não é raro termos que dicidir entre uma e outra ao realizar uma pesquisa 
-                científica. A partir de uma abordagem multiverso é possível  navegar entre todas (ou a maioria) das análises 
-                factíveis para um mesmo conjunto de dados como feito por Silberzahn e Uhlman para explorar a diversidade 
-                de resultados possíveis ao verificar se há relação entre o tom de pele de um jogador de futebol e a decisão de um árbitro em lhe dar 
-                um cartão vermelho. Sendo assim neste artigo nós reproduzimos algumas das análises feitas utilizando 
-                regressão linear com o objetivo de apresentar seus resultados na forma de um artigo interativo. 
-            
+            A área da computação que abrange a ciência de dados está repleta de métodos e técnicas para realizar
+            uma mesma tarefa, sendo assim não é raro termos que dicidir entre uma e outra ao realizar uma pesquisa
+            científica. A partir de uma abordagem multiverso é possível navegar entre todas (ou a maioria) das análises
+            factíveis para um mesmo conjunto de dados como feito por Silberzahn e Uhlman para explorar a diversidade
+            de resultados possíveis ao verificar se há relação entre o tom de pele de um jogador de futebol e a decisão
+            de um árbitro em lhe dar
+            um cartão vermelho. Sendo assim neste artigo nós reproduzimos algumas das análises feitas utilizando
+            regressão linear com o objetivo de apresentar seus resultados na forma de um artigo interativo.
+
 
 
         </p>
@@ -123,9 +124,9 @@
         <h3>Palavras-chave</h3>
 
         <p align="justify">
-                <font size="4"> 
-            Análise de dados; transparência científica; dados abertos; materiais abertos.
-                </font>
+            <font size="4">
+                Análise de dados; transparência científica; dados abertos; materiais abertos.
+            </font>
         </p>
 
 
@@ -159,7 +160,7 @@
         </p>
 
         <p align="justify">
-            Para exemplificar este conceito, procuraremos adpatar algumas análises feitas  no artigo <dt-cite
+            Para exemplificar este conceito, procuraremos adpatar algumas análises feitas no artigo <dt-cite
                 key="doi:10.1177/2515245917747646"><i> Many Analysts, One
                     Data Set: Making Transparent How Variations in Analytic Choices Affect Results</i></dt-cite> em um
             EMAR. Neste artigo
@@ -173,37 +174,42 @@
 
         <p align="justify">
 
-            Para montar o <i>dataset</i> utilizado no estudo, foram coletadas informações demográficas de todos os atletas que atuaram na primeira divisão masculina de futebol da Inglaterra,
+            Para montar o <i>dataset</i> utilizado no estudo, foram coletadas informações demográficas de todos os
+            atletas que atuaram na primeira divisão masculina de futebol da Inglaterra,
             Alemanha, França e Espanha durante a temporada 2012-2013.
         </p>
 
         <p align="justify">
             Foram reunidos dados como peso, altura, idade, clube, posição, país da liga, número de cartões
-            vermelhos, número de cartões amarelos, além também de incluir dados sobre as interações de cada jogador com cada
+            vermelhos, número de cartões amarelos, além também de incluir dados sobre as interações de cada jogador com
+            cada
             árbitro durante o período analisado.
 
         </p>
 
         <p align="justify">
             Além dessas informações foram obtidas também fotos dos jogadores, e a partir das mesmas os jogadores foram
-            classificados de acordo com o tom de pele por dois avaliadores independentes em uma escala que varia de 0 (pele muito
+            classificados de acordo com o tom de pele por dois avaliadores independentes em uma escala que varia de 0
+            (pele muito
             clara) à 1 (pele muito escura).
         </p>
 
         <p align="justify">
             A partir dos dados obtidos, vários pesquisadores de diferentes áreas organizaram-se em times e cada
-            qual teve a liberdade de utilizar as técnicas que julgavam mais apropriadas para abordar a questão, sempre com
+            qual teve a liberdade de utilizar as técnicas que julgavam mais apropriadas para abordar a questão, sempre
+            com
             rodadas de feedback entre os times.
         </p>
 
         <p>
-            Os resultados aqui relatados referem-se a alguns times que optaram por utilizar regressão linear como forma de 
-            responder a questão proposta. 
+            Os resultados aqui relatados referem-se a alguns times que optaram por utilizar regressão linear como forma
+            de
+            responder a questão proposta.
         </p>
 
 
 
-        
+
 
         <h3>Resultados</h3>
 
@@ -214,19 +220,20 @@
 
         </p>
 
-        <p align="justify" >
+        <p align="justify">
             Para tanto foi considerado o seguinte conjunto de variáveis preditoras:<br><br>
             <font size="4">
-            <input type="radio" class="clique" name="var" value="1" checked="checked">Somente <i>tom de pele</i><br>
-            <input type="radio" class="clique" name="var" value="2"><i>Tom de pele</i>, <i>idade</i>, <i>idade²</i>,
-            <i>peso</i>,<i>peso²</i>, <i>altura</i>,
-            <i>altura²</i> <br>
-            <input type="radio" class="clique" name="var" value="3"><i>Tom de pele</i>, <i>idade</i>, <i>idade²</i>,
-            <i>peso</i>, <i>peso²</i>, <i>altura</i>,
-            <i>altura²</i>, <i>liga</i> e <i>posição</i> <br>
-            <input type="radio" class="clique" name="var" value="4"><i>Tom de pele</i>,<i>país</i>, <i>posição</i>, quantidade de <i>jogos</i> e
-             <i>vitórias</i> <br>
-        </font>
+                <input type="radio" class="clique" name="var" value="1" checked="checked">Somente <i>tom de pele</i><br>
+                <input type="radio" class="clique" name="var" value="2"><i>Tom de pele</i>, <i>idade</i>, <i>idade²</i>,
+                <i>peso</i>, <i>peso²</i>, <i>altura</i>,
+                <i>altura²</i> <br>
+                <input type="radio" class="clique" name="var" value="3"><i>Tom de pele</i>, <i>idade</i>, <i>idade²</i>,
+                <i>peso</i>, <i>peso²</i>, <i>altura</i>,
+                <i>altura²</i>, <i>liga</i> e <i>posição</i> <br>
+                <input type="radio" class="clique" name="var" value="4"><i>Tom de pele</i>, <i>país</i>, <i>posição</i>,
+                quantidade de <i>jogos</i> e
+                <i>vitórias</i> <br>
+            </font>
         </p>
 
         <p align="justify">
@@ -238,16 +245,18 @@
                 <tr id="expansao">
                     <th>Expansão de dados </th>
                     <font size="4">
-                    <td><input type="radio" class="clique" name="expansao" value="1" checked="checked">Sem expansão dos
-                        dados </td>
-                    <td><input type="radio" class="clique" name="expansao" value="2">Com expansão dos dados </td>
+                        <td><input type="radio" class="clique" name="expansao" value="1" checked="checked">Sem expansão
+                            dos
+                            dados </td>
+                        <td><input type="radio" class="clique" name="expansao" value="2">Com expansão dos dados </td>
                     </font>
                 </tr>
                 <tr id="penalizacao">
                     <th>Tipo de Penalização </th>
                     <font size="4">
-                    <td><input type="radio" class="clique" name="pen" value="1" checked="checked">Penalização L1 </td>
-                    <td><input type="radio" class="clique" name="pen" value="2">Penalização L2 </td>
+                        <td><input type="radio" class="clique" name="pen" value="1" checked="checked">Penalização L1
+                        </td>
+                        <td><input type="radio" class="clique" name="pen" value="2">Penalização L2 </td>
                     </font>
                 </tr>
 
@@ -257,7 +266,7 @@
 
             <!-- Tabela de resultados -->
             <p align="center" id="tabela">
-                
+
 
 
 
@@ -269,24 +278,29 @@
         <h3>Discussão e Conclusão</h3>
 
         <p align="justify">
-            A partir dos resultados obtidos utilizando regressões linearespodemos concluir que o tom de pele de um jogador de futebol 
-            tem nenhuma ou mínima influência na decisão do árbitro em lhe atribuir um cartão vermelho. Porém devemos salientar que várias outras interpretações dos dados 
-        e uso de técnicas diferentes podem gerar resultados diferentes e toda essa incerteza é justificavel em razão das muitas 
-        decisões que o pesquisador deve fazer para realizar a pesquisa.
+            A partir dos resultados obtidos utilizando regressões lineares podemos concluir que o tom de pele de um
+            jogador de futebol
+            tem nenhuma ou mínima influência na decisão do árbitro em lhe atribuir um cartão vermelho. Porém devemos
+            salientar que várias outras interpretações dos dados
+            e uso de técnicas diferentes podem gerar resultados diferentes e toda essa incerteza é justificavel em razão
+            das muitas
+            decisões que o pesquisador deve fazer para realizar a pesquisa.
         </p>
 
         <p align="justify">
-            Logo, a melhor forma de aumentar a transparência na apresentação de resultados é justamente expor todos os pontos 
-            de indecisão, além de disponibilizar os dados, explicar os métodos quando estes não são tão difundidos na área do
-            tema da pesquisa, pois assim damos a comunidade científica a oportunidade de ver as decisões, questioná-las, 
+            Logo, a melhor forma de aumentar a transparência na apresentação de resultados é justamente expor todos os
+            pontos
+            de indecisão, além de disponibilizar os dados, explicar os métodos quando estes não são tão difundidos na
+            área do
+            tema da pesquisa, pois assim damos a comunidade científica a oportunidade de ver as decisões, questioná-las,
             indicar caminhos diferentes e testá-los em novas pesquisas.
 
         </p>
 
-        
 
 
-            
+
+
 
         </p>
 
